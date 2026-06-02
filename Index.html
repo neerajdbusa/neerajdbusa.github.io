@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Neeraj Dube — SAP Commerce Cloud Architect</title>
+<meta name="description" content="Neeraj Dube — SAP Commerce Cloud Architect with 16+ years of experience delivering B2B and B2C e-commerce solutions across pharma, retail, and manufacturing." />
+<meta name="keywords" content="Neeraj Dube, SAP Commerce Cloud, Hybris Architect, Spartacus, OCC API, B2B Commerce" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', -apple-system, sans-serif; line-height: 1.6; color: #1a1a1a; background: #fafafa; -webkit-font-smoothing: antialiased; }
+  a { color: inherit; text-decoration: none; }
+  :root { --primary: #0066cc; --dark: #0a1628; --gray: #5a6478; --light: #f1f5f9; --border: #e2e8f0; --accent: #00b4a6; }
+  h1, h2, h3, h4 { font-weight: 700; letter-spacing: -0.02em; line-height: 1.2; color: var(--dark); }
+  p { color: var(--gray); }
+  .container { max-width: 960px; margin: 0 auto; padding: 0 1.5rem; }
+
+  nav { position: fixed; top: 0; left: 0; right: 0; background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); z-index: 100; padding: 1rem 0; }
+  .nav-inner { display: flex; justify-content: space-between; align-items: center; max-width: 960px; margin: 0 auto; padding: 0 1.5rem; }
+  .logo { font-weight: 800; font-size: 1.25rem; }
+  .logo span { color: var(--primary); }
+  .nav-links { display: flex; gap: 1.75rem; list-style: none; }
+  .nav-links a { font-weight: 500; font-size: 0.95rem; color: var(--gray); transition: color 0.2s; }
+  .nav-links a:hover { color: var(--primary); }
+  @media (max-width: 700px) { .nav-links { display: none; } }
+
+  .hero { padding: 9rem 0 5rem; text-align: center; background: linear-gradient(180deg, #f0f7ff 0%, #fafafa 100%); }
+  .avatar { width: 130px; height: 130px; border-radius: 50%; background: linear-gradient(135deg, #0066cc, #00b4a6); margin: 0 auto 2rem; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 3rem; font-weight: 700; box-shadow: 0 20px 40px rgba(0,102,204,0.25); }
+  .hero h1 { font-size: clamp(2.25rem, 5vw, 3.5rem); margin-bottom: 0.75rem; }
+  .hero .title { font-size: 1.2rem; color: var(--primary); font-weight: 600; margin-bottom: 0.5rem; }
+  .hero .badge { display: inline-block; background: rgba(0,180,166,0.1); color: var(--accent); padding: 0.35rem 1rem; border-radius: 20px; font-size: 0.85rem; font-weight: 600; margin-bottom: 1.5rem; }
+  .hero .tagline { font-size: 1.1rem; max-width: 700px; margin: 0 auto 2rem; color: var(--gray); }
+  .hero-meta { display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; font-size: 0.95rem; color: var(--gray); margin-bottom: 2rem; }
+  .hero-actions { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
+  .btn { display: inline-block; padding: 0.8rem 1.75rem; border-radius: 8px; font-weight: 600; transition: all 0.25s; cursor: pointer; border: none; font-size: 0.95rem; }
+  .btn-primary { background: var(--primary); color: #fff; }
+  .btn-primary:hover { background: #0052a3; transform: translateY(-2px); box-shadow: 0 10px 25px rgba(0,102,204,0.3); }
+  .btn-outline { background: transparent; color: var(--dark); border: 1.5px solid var(--border); }
+  .btn-outline:hover { border-color: var(--primary); color: var(--primary); }
+
+  section { padding: 4rem 0; }
+  .section-title { font-size: 1.85rem; margin-bottom: 0.5rem; }
+  .section-subtitle { color: var(--gray); margin-bottom: 2.5rem; }
+
+  .about-text { font-size: 1.05rem; line-height: 1.8; color: #334155; }
+  .about-text p { color: #334155; margin-bottom: 1rem; }
+  .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 1rem; margin-top: 2rem; }
+  .stat-card { background: #fff; padding: 1.5rem; border-radius: 12px; border: 1px solid var(--border); text-align: center; }
+  .stat-num { font-size: 2rem; font-weight: 800; color: var(--primary); }
+  .stat-label { font-size: 0.85rem; color: var(--gray); margin-top: 0.25rem; }
+
+  .skill-category { margin-bottom: 2rem; }
+  .skill-category h4 { font-size: 1rem; color: var(--primary); margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; }
+  .skills-grid { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .skill-tag { background: #fff; padding: 0.5rem 1rem; border-radius: 6px; border: 1px solid var(--border); font-weight: 500; font-size: 0.9rem; transition: all 0.2s; }
+  .skill-tag:hover { border-color: var(--primary); color: var(--primary); transform: translateY(-2px); }
+
+  .timeline-item { background: #fff; padding: 1.75rem; border-radius: 12px; border: 1px solid var(--border); margin-bottom: 1rem; transition: all 0.25s; border-left: 4px solid var(--primary); }
+  .timeline-item:hover { transform: translateX(4px); box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+  .timeline-header { display: flex; justify-content: space-between; flex-wrap: wrap; margin-bottom: 0.25rem; gap: 0.5rem; }
+  .timeline-role { font-weight: 700; font-size: 1.1rem; color: var(--dark); }
+  .timeline-company { color: var(--primary); font-weight: 600; font-size: 0.95rem; margin-bottom: 0.25rem; }
+  .timeline-date { color: var(--gray); font-size: 0.9rem; }
+  .timeline-item .project { font-style: italic; color: #475569; margin-bottom: 0.5rem; font-size: 0.95rem; }
+  .timeline-item ul { padding-left: 1.25rem; margin-top: 0.5rem; }
+  .timeline-item li { color: var(--gray); margin-bottom: 0.4rem; font-size: 0.95rem; }
+
+  .cert-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+  .cert-card { background: #fff; padding: 1.25rem; border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; gap: 1rem; transition: all 0.25s; }
+  .cert-card:hover { border-color: var(--accent); transform: translateY(-3px); }
+  .cert-icon { width: 40px; height: 40px; background: rgba(0,180,166,0.1); color: var(--accent); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0; }
+  .cert-card .name { font-weight: 600; font-size: 0.95rem; color: var(--dark); }
+
+  .contact-card { background: linear-gradient(135deg, #0a1628, #0066cc); color: #fff; padding: 3rem 2rem; border-radius: 16px; text-align: center; }
+  .contact-card h2 { color: #fff; margin-bottom: 0.75rem; }
+  .contact-card p { color: #cbd5e1; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto; }
+  .contact-links { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
+  .contact-btn { background: rgba(255,255,255,0.1); color: #fff; border: 1px solid rgba(255,255,255,0.2); padding: 0.75rem 1.5rem; border-radius: 8px; font-weight: 600; transition: all 0.25s; font-size: 0.95rem; }
+  .contact-btn:hover { background: #fff; color: var(--dark); transform: translateY(-2px); }
+
+  footer { text-align: center; padding: 2rem 1.5rem; color: var(--gray); font-size: 0.9rem; border-top: 1px solid var(--border); margin-top: 2rem; }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="logo">Neeraj Dube<span>.</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container">
+    <div class="avatar">ND</div>
+    <h1>Neeraj Dube</h1>
+    <div class="title">SAP Commerce Cloud Architect</div>
+    <div class="badge">✓ Hybris Certified Professional · 16+ Years Experience</div>
+    <p class="tagline">
+      Architecting scalable B2B and B2C e-commerce platforms across pharma, retail, manufacturing, and insurance domains. Deep expertise in SAP Commerce (Hybris), OCC/Spartacus, PCM, OMS, and SAP ERP integrations — recently expanding into AI-assisted commerce with conversational shopping agents
