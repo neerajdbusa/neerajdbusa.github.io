@@ -1532,3 +1532,109 @@ footer p:last-child { margin-bottom: 0; }
   .nav-inner { padding: 0 1.25rem; }
   .top-bar-inner { padding: 0 1.25rem; }
 }
+
+/* ============================================
+   MOBILE RESPONSIVE FIXES
+   ============================================ */
+
+@media (max-width: 768px) {
+  /* Container */
+  .container { padding: 0 1rem; }
+  section { padding: 3rem 0; }
+
+  /* Top Bar */
+  .top-bar { display: block; padding: 0.4rem 0; font-size: 0.75rem; }
+  .top-bar-inner {
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 0 1rem;
+    text-align: center;
+  }
+  .top-bar a { margin-left: 0.75rem; }
+  .top-bar a:first-of-type { margin-left: 0; }
+
+  /* Hero */
+  .hero { padding: 3rem 0 4rem; }
+  .hero-inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    text-align: center;
+  }
+  .hero h1 { font-size: 1.85rem; line-height: 1.2; }
+  .hero .title { font-size: 1rem; }
+  .hero .tagline {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero-eyebrow { font-size: 0.7rem; }
+  .hero-actions {
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .hero-actions .btn { width: 100%; justify-content: center; }
+  .hero-card { padding: 1.5rem; margin-top: 1rem; text-align: left; }
+  .hero-card h3 { font-size: 0.9rem; }
+  .cred-list li { font-size: 0.88rem; }
+
+  /* Page Header (inner pages) */
+  .page-header { padding: 3rem 0 2.5rem; }
+  .page-header h1 { font-size: 1.75rem; }
+  .page-header p { font-size: 0.95rem; padding: 0 0.5rem; }
+
+  /* Stats Grid */
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .stat-card {
+    padding: 1.5rem 1rem;
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+  .stat-card:nth-child(2n) { border-right: none; }
+  .stat-card:nth-last-child(-n+2) { border-bottom: none; }
+  .stat-num { font-size: 2.25rem; }
+  .stat-label { font-size: 0.75rem; }
+
+  /* Section Headers */
+  .section-title { font-size: 1.5rem; }
+  .section-subtitle { font-size: 0.95rem; }
+
+  /* Cards */
+  .expertise-card,
+  .domain-card,
+  .feature-card,
+  .skill-category,
+  .timeline-item,
+  .availability-card,
+  .intro-card { padding: 1.5rem; }
+
+  /* Company Block */
+  .company-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  .company-name { font-size: 1.1rem; }
+
+  /* Clients Bar */
+  .clients-grid { gap: 1.5rem; }
+  .client-name { font-size: 0.85rem; }
+
+  /* CTA Banner */
+  .cta-banner { padding: 2.5rem 1.5rem; }
+  .cta-banner h2 { font-size: 1.5rem; }
+  .cta-banner p { font-size: 0.95rem; }
+}
+
+@media (max-width: 480px) {
+  .container { padding: 0 0.75rem; }
+  section { padding: 2.5rem 0; }
+  .top-bar > .top-bar-inner > span { display: none; }
+  .hero { padding: 2rem 0 3rem; }
+  .hero h1 { font-size: 1.6rem; }
+  .hero .tagline { font-size: 0.9rem; }
+  .stat-card { padding: 1.25rem 0.5rem; }
+  .stat-num { font-size: 1.85rem; }
+  .clients-grid { gap: 1rem; }
+}
