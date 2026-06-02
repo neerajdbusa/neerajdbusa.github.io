@@ -8,6 +8,21 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
+  <script>
+  const menuToggle = document.getElementById('menuToggle');
+  const navLinks = document.getElementById('navLinks');
+  const menuOverlay = document.getElementById('menuOverlay');
+
+  function toggleMenu() {
+    menuToggle.classList.toggle('active');
+    navLinks.classList.toggle('active');
+    menuOverlay.classList.toggle('active');
+    document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
+  }
+
+  menuToggle.addEventListener('click', toggleMenu);
+  menuOverlay.addEventListener('click', toggleMenu);
+</script>
 <body>
 
 <!-- Top Bar -->
@@ -24,22 +39,32 @@
 </div>
 
 <!-- Navigation -->
+<!-- Navigation -->
 <nav>
   <div class="nav-inner">
     <div class="logo">
       <span class="logo-name">Neeraj Dube</span>
       <span class="logo-tagline">SAP Commerce Architect</span>
     </div>
-    <ul class="nav-links">
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul class="nav-links" id="navLinks">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="experience.html">Experience</a></li>
       <li><a href="skills.html">Skills</a></li>
       <li><a href="ai-commerce.html">AI Commerce</a></li>
-      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
   </div>
 </nav>
+
+<div class="menu-overlay" id="menuOverlay"></div>
 
 <!-- Page Header -->
 <header class="page-header">
