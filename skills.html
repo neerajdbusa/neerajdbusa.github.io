@@ -1,8 +1,3 @@
-# 📄 Page 4 of 6: `skills.html`
-
-Create a new file in your repo named **`skills.html`** and paste this complete code:
-
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,54 +7,27 @@ Create a new file in your repo named **`skills.html`** and paste this complete c
 <meta name="description" content="Technical skills and core competencies of Neeraj Dube — SAP Commerce Cloud, Hybris, Spartacus, OCC API, Java/J2EE, Spring, Azure, and more." />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-body { font-family: 'Inter', -apple-system, sans-serif; line-height: 1.6; color: #1a1a1a; background: #fafafa; -webkit-font-smoothing: antialiased; }
-a { color: inherit; text-decoration: none; }
-:root { --primary: #0066cc; --dark: #0a1628; --gray: #5a6478; --light: #f1f5f9; --border: #e2e8f0; --accent: #00b4a6; --purple: #7c3aed; }
-h1, h2, h3, h4 { font-weight: 700; letter-spacing: -0.02em; line-height: 1.2; color: var(--dark); }
-p { color: var(--gray); }
-.container { max-width: 980px; margin: 0 auto; padding: 0 1.5rem; }
-nav { position: fixed; top: 0; left: 0; right: 0; background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); z-index: 100; padding: 1rem 0; }
-.nav-inner { display: flex; justify-content: space-between; align-items: center; max-width: 980px; margin: 0 auto; padding: 0 1.5rem; }
-.logo { font-weight: 800; font-size: 1.25rem; }
-.logo span { color: var(--primary); }
-.nav-links { display: flex; gap: 1.4rem; list-style: none; flex-wrap: wrap; }
-.nav-links a { font-weight: 500; font-size: 0.9rem; color: var(--gray); transition: color 0.2s; }
-.nav-links a:hover, .nav-links a.active { color: var(--primary); }
-@media (max-width: 900px) { .nav-links { display: none; } }
-.page-header { padding: 8rem 0 3rem; text-align: center; background: linear-gradient(180deg, #f0f7ff 0%, #fafafa 100%); }
-.page-header h1 { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 0.75rem; }
-.page-header p { font-size: 1.1rem; max-width: 700px; margin: 0 auto; }
-section { padding: 3rem 0; }
-.section-title { font-size: 1.75rem; margin-bottom: 0.5rem; }
-.section-subtitle { color: var(--gray); margin-bottom: 2rem; }
-.skill-category { margin-bottom: 1.5rem; background: #fff; padding: 1.75rem; border-radius: 12px; border: 1px solid var(--border); transition: all 0.25s; }
-.skill-category:hover { border-color: var(--primary); box-shadow: 0 10px 30px rgba(0,102,204,0.05); }
-.skill-category-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
-.skill-icon { width: 42px; height: 42px; background: rgba(0,102,204,0.1); color: var(--primary); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0; }
-.skill-category h4 { font-size: 1.05rem; color: var(--dark); margin: 0; }
-.skills-grid { display: flex; flex-wrap: wrap; gap: 0.5rem; }
-.skill-tag { background: var(--light); padding: 0.5rem 1rem; border-radius: 6px; border: 1px solid var(--border); font-weight: 500; font-size: 0.9rem; transition: all 0.2s; color: var(--dark); }
-.skill-tag:hover { border-color: var(--primary); color: var(--primary); background: #fff; transform: translateY(-2px); }
-.skill-tag.primary { background: rgba(0,102,204,0.1); border-color: rgba(0,102,204,0.3); color: var(--primary); font-weight: 600; }
-.skill-tag.accent { background: rgba(0,180,166,0.1); border-color: rgba(0,180,166,0.3); color: var(--accent); font-weight: 600; }
-.competency-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
-.competency-card { background: linear-gradient(135deg, #fff 0%, #f8faff 100%); padding: 1.5rem; border-radius: 12px; border: 1px solid var(--border); transition: all 0.25s; }
-.competency-card:hover { border-color: var(--primary); transform: translateY(-3px); }
-.competency-icon { font-size: 2rem; margin-bottom: 0.5rem; }
-.competency-card h4 { font-size: 1rem; margin-bottom: 0.4rem; }
-.competency-card p { font-size: 0.88rem; }
-footer { text-align: center; padding: 2rem 1.5rem; color: var(--gray); font-size: 0.9rem; border-top: 1px solid var(--border); margin-top: 2rem; }
-footer a { color: var(--primary); }
-</style>
 </head>
 <body>
 
+<!-- Top Bar -->
+<div class="top-bar">
+  <div class="top-bar-inner">
+    <span>📍 Available for Enterprise SAP Commerce Engagements</span>
+    <div>
+      <a href="mailto:neerajdbusa@gmail.com">neerajdbusa@gmail.com</a>
+      <a href="tel:+14846862704">+1-484-686-2704</a>
+    </div>
+  </div>
+</div>
+
+<!-- Navigation -->
 <nav>
   <div class="nav-inner">
-    <div class="logo">Neeraj Dube<span>.</span></div>
+    <div class="logo">
+      <span class="logo-name">Neeraj Dube</span>
+      <span class="logo-tagline">SAP Commerce Architect</span>
+    </div>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
@@ -71,6 +39,7 @@ footer a { color: var(--primary); }
   </div>
 </nav>
 
+<!-- Page Header -->
 <header class="page-header">
   <div class="container">
     <h1>Technical Skills & Competencies</h1>
@@ -78,25 +47,31 @@ footer a { color: var(--primary); }
   </div>
 </header>
 
+<!-- Core Competencies -->
 <section>
   <div class="container">
-    <h2 class="section-title">Core Competencies</h2>
-    <p class="section-subtitle">The high-level capabilities I bring to every engagement [1].</p>
+    <div class="section-header">
+      <span class="eyebrow">Core Competencies</span>
+      <h2 class="section-title">High-Level Capabilities</h2>
+      <div class="section-divider"></div>
+      <p class="section-subtitle">The professional disciplines I bring to every engagement [1].</p>
+    </div>
+
     <div class="competency-grid">
       <div class="competency-card">
         <div class="competency-icon">🏗️</div>
         <h4>Technical Architecture</h4>
-        <p>Designing scalable SAP Commerce solutions across complex enterprise landscapes.</p>
+        <p>Designing scalable SAP Commerce solutions across complex enterprise landscapes [1].</p>
       </div>
       <div class="competency-card">
         <div class="competency-icon">👥</div>
         <h4>Team Leadership</h4>
-        <p>Leading distributed offshore teams, sprint planning, and code reviews.</p>
+        <p>Leading distributed offshore teams, sprint planning, and code reviews [1].</p>
       </div>
       <div class="competency-card">
         <div class="competency-icon">🤝</div>
         <h4>Client Engagement</h4>
-        <p>Workshops, requirement validation, and stakeholder alignment.</p>
+        <p>Workshops, requirement validation, and stakeholder alignment [1].</p>
       </div>
       <div class="competency-card">
         <div class="competency-icon">📋</div>
@@ -117,15 +92,20 @@ footer a { color: var(--primary); }
   </div>
 </section>
 
-<section style="background:#fff;">
+<!-- SAP Commerce Cloud -->
+<section class="section-alt">
   <div class="container">
-    <h2 class="section-title">SAP Commerce Cloud Expertise</h2>
-    <p class="section-subtitle">Deep specialization across the SAP Commerce ecosystem [1].</p>
+    <div class="section-header">
+      <span class="eyebrow">Specialization</span>
+      <h2 class="section-title">SAP Commerce Cloud Expertise</h2>
+      <div class="section-divider"></div>
+      <p class="section-subtitle">Deep specialization across the SAP Commerce ecosystem [1].</p>
+    </div>
 
     <div class="skill-category">
       <div class="skill-category-header">
         <div class="skill-icon">🛒</div>
-        <h4>SAP Commerce Cloud / Hybris</h4>
+        <h4>SAP Commerce Cloud / Hybris Versions</h4>
       </div>
       <div class="skills-grid">
         <span class="skill-tag primary">Hybris 2211</span>
@@ -159,14 +139,20 @@ footer a { color: var(--primary); }
   </div>
 </section>
 
+<!-- Languages & Frameworks -->
 <section>
   <div class="container">
-    <h2 class="section-title">Languages & Frameworks</h2>
+    <div class="section-header">
+      <span class="eyebrow">Programming</span>
+      <h2 class="section-title">Languages & Frameworks</h2>
+      <div class="section-divider"></div>
+      <p class="section-subtitle">Modern Java stack and frontend technologies [1].</p>
+    </div>
 
     <div class="skill-category">
       <div class="skill-category-header">
         <div class="skill-icon">☕</div>
-        <h4>Programming Languages & Java Stack</h4>
+        <h4>Java Stack & Backend</h4>
       </div>
       <div class="skills-grid">
         <span class="skill-tag primary">Java / J2EE</span>
@@ -190,7 +176,7 @@ footer a { color: var(--primary); }
         <span class="skill-tag">JavaScript</span>
         <span class="skill-tag">HTML5</span>
         <span class="skill-tag">CSS3</span>
-                <span class="skill-tag">jQuery</span>
+        <span class="skill-tag">jQuery</span>
         <span class="skill-tag">AJAX</span>
         <span class="skill-tag">Angular JS</span>
         <span class="skill-tag">JSP</span>
@@ -199,10 +185,15 @@ footer a { color: var(--primary); }
   </div>
 </section>
 
-<section style="background:#fff;">
+<!-- Integration & APIs -->
+<section class="section-alt">
   <div class="container">
-    <h2 class="section-title">Integration & APIs</h2>
-    <p class="section-subtitle">Connecting SAP Commerce with enterprise backends and external services [1].</p>
+    <div class="section-header">
+      <span class="eyebrow">Connectivity</span>
+      <h2 class="section-title">Integration & APIs</h2>
+      <div class="section-divider"></div>
+      <p class="section-subtitle">Connecting SAP Commerce with enterprise backends and external services [1].</p>
+    </div>
 
     <div class="skill-category">
       <div class="skill-category-header">
@@ -225,10 +216,15 @@ footer a { color: var(--primary); }
   </div>
 </section>
 
+<!-- DevOps, Cloud & Tools -->
 <section>
   <div class="container">
-    <h2 class="section-title">DevOps, Cloud & Tools</h2>
-    <p class="section-subtitle">Modern delivery infrastructure and developer tools [1].</p>
+    <div class="section-header">
+      <span class="eyebrow">Infrastructure</span>
+      <h2 class="section-title">DevOps, Cloud & Tools</h2>
+      <div class="section-divider"></div>
+      <p class="section-subtitle">Modern delivery infrastructure and developer tools [1].</p>
+    </div>
 
     <div class="skill-category">
       <div class="skill-category-header">
@@ -279,12 +275,17 @@ footer a { color: var(--primary); }
       </div>
     </div>
   </div>
-</section>
+  </section>
 
-<section style="background:#fff;">
+<!-- Databases & Servers -->
+<section class="section-alt">
   <div class="container">
-    <h2 class="section-title">Databases & Servers</h2>
-    <p class="section-subtitle">Backend data storage and application server experience [1].</p>
+    <div class="section-header">
+      <span class="eyebrow">Data Layer</span>
+      <h2 class="section-title">Databases & Servers</h2>
+      <div class="section-divider"></div>
+      <p class="section-subtitle">Backend data storage and application server experience [1].</p>
+    </div>
 
     <div class="skill-category">
       <div class="skill-category-header">
@@ -313,9 +314,15 @@ footer a { color: var(--primary); }
   </div>
 </section>
 
+<!-- Methodologies & Domain Expertise -->
 <section>
   <div class="container">
-    <h2 class="section-title">Methodologies & Domain Expertise</h2>
+    <div class="section-header">
+      <span class="eyebrow">Methodologies</span>
+      <h2 class="section-title">Methodologies & Domain Expertise</h2>
+      <div class="section-divider"></div>
+      <p class="section-subtitle">Delivery practices and industry experience built across 16+ years [1].</p>
+    </div>
 
     <div class="skill-category">
       <div class="skill-category-header">
@@ -347,8 +354,23 @@ footer a { color: var(--primary); }
   </div>
 </section>
 
+<!-- CTA Banner -->
+<section class="section-alt">
+  <div class="container">
+    <div class="cta-banner">
+      <h2>Need Expertise Across the Full SAP Commerce Stack?</h2>
+      <p>From architecture to integration, from PCM to AI-assisted commerce — let's discuss how my skill set fits your project [1].</p>
+      <a href="contact.html" class="btn btn-primary">Get in Touch →</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
 <footer>
-  © 2025 Neeraj Dube · SAP Commerce Cloud Architect · <a href="contact.html">Get in Touch</a>
+  <div class="container">
+    <p>© 2025 Neeraj Dube · SAP Commerce Cloud Architect · Hybris Certified Professional [1]</p>
+    <p>📧 <a href="mailto:neerajdbusa@gmail.com">neerajdbusa@gmail.com</a> · 📱 +1-484-686-2704</p>
+  </div>
 </footer>
 
 </body>
